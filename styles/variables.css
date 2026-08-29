@@ -1,1 +1,10 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-inter: "Inter", Arial, sans-serif;
+  --font-accent: "Press Start 2P", Arial, sans-serif;
+  --card-title-weight: 715;
+  --card-body-weight: 410;
+  --gradient-color: #d3d3d3;
+  --gradient-color-white: #e7e7e7;
+  --gradient-color-black: #1a1a1a;
+  --block-width: clamp(320px, 100%, 700px);
+}

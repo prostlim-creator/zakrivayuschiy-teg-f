@@ -7,4 +7,5 @@
   --gradient-color-white: #e7e7e7;
   --gradient-color-black: #1a1a1a;
   --block-width: clamp(320px, 100%, 700px);
+  --text-stroke-color: rgba(255, 255, 255, 1);
 }

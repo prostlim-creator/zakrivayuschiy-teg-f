@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -34,26 +33,124 @@
   align-items: center;
   justify-content: center;
   min-height: 368px;
-  padding-block: clamp(122px, 9.29vw, 173px);
-  padding-inline: clamp(16px, 9.29vw, 122.5px);
+  padding-block: clamp(122px, 107.43px + 4.55vw, 173px);
+  padding-inline: clamp(16px, -14.43px + 9.51vw, 122.5px);
   background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 98px;
 }
 
 .style-title {
-width: clamp(343px, 65vw, 455px);
+width: clamp(343px, 311px + 10vw, 455px);
 }
 
 .title {
 font-family: var(--font-accent);
 font-weight: 400;
 text-transform: uppercase;
-font-size: clamp(49px, 14.29vw, 65px);
+font-size: clamp(49px, 44.43px + 1.43vw, 65px);
 }
 
 .title-paragraph {
 font-family: var(--font-accent);
 font-weight: 400;
-font-size: clamp(14px, 5.05vw, 23px);
+font-size: clamp(14px, 11.43px + 0.8vw, 23px);
 text-align: center;
 
+}
+
+.card {
+  width: var(--block-width);
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 52px;
+}
+
+.card__text {
+font-family: var(--font-inter);
+font-variation-settings: "wght" var(--card-body-weight);
+font-size: 18px;
+line-height: 21px;
+
+}
+
+.card p {
+  margin-block-end: 25px;
+  padding-inline: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+  padding-bottom: 25px;
+
+}
+
+.image {
+width: 100%;
+object-fit: cover;
+padding-bottom: 25px;
+}
+
+.button__text {
+font-family:var(--font-accent);
+font-weight: 400;
+font-size: 14px;
+line-height: 90%;
+}
+
+.card__icon-button {
+background-color: transparent;
+border: 2px solid var(--gradient-color-black);
+width: 130px;
+height: 38px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card__like-button {
+  background-color: transparent;
+  border: none;
+  
+}
+
+.label {
+position: absolute;
+width: 98px;
+left: 575px;
+top: 28px;
+font-family: 'Press Start 2P';
+font-size: 14px;
+line-height: 14px;
+text-transform: uppercase;
+color: rgba(0, 0, 0, 1);
+mix-blend-mode: hard-light;
+opacity: 0.5;
+z-index: 1;
+text-shadow: -1px 0 var(--text-stroke-color),
+   0 1px var(--text-stroke-color),
+   1px 0 var(--text-stroke-color),
+   0 -1px var(--text-stroke-color);
+
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
+  }}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__title {
+width: 100%;
+font-family: var(--font-inter);
+font-variation-settings: "wght" var(--card-title-weight);
+font-size: 18px;
+line-height: 22px;
+vertical-align: middle;
+padding: 4px 10px;
+color: rgba(0, 0, 0, 1);
 }

@@ -377,3 +377,7 @@ background-color: white;
   min-width: 39px;
   min-height: 39px;
 }
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.7);
+}

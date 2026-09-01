@@ -1,12 +1,13 @@
 :root {
-  --font-inter: "Inter", Arial, sans-serif;
+  --font-variations: "Inter", Arial, sans-serif;
   --font-accent: "Press Start 2P", Arial, sans-serif;
   --card-title-weight: 715;
   --card-body-weight: 410;
   --gradient-color: #d3d3d3;
   --gradient-color-white: #e7e7e7;
   --gradient-color-black: #1a1a1a;
-  --block-width: clamp(320px, 100%, 700px);
+  --block-width: clamp(375px, 48.611vw, 700px);
+  --block-height: clamp(327px, 25.556vw, 368px);
   --text-stroke-color: rgba(255, 255, 255, 1);
   --contour-color: rgba(0, 0, 0, 1);
   --animation-fill-color: rgba(255, 0, 0, 1);
